@@ -5,7 +5,7 @@ a = Analysis(
     ['DesktopPet.py'],
     pathex=[],
     binaries=[],
-    datas=[('pet.png', '.')],
+    datas=[('pet.png', '.'), ('pet.ico', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,4 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['pet.ico'],
 )
